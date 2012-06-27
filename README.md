@@ -1,4 +1,10 @@
 chocolateytemplates
 ===================
 
-The templates....
+The templates...
+  
+  
+  
+  
+  
+...it's all about the templates.
