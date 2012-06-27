@@ -1,0 +1,1 @@
+﻿#Install-VirtualPackage '__NAME__.commandline' '__NAME__.install'
