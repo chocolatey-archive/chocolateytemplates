@@ -11,22 +11,22 @@
   #$env:Path = "$($env:Path);$installDir"
   $zipUrl = 'somewhere.zip/7z'
 
-  Install-ChocolateyZipPackage '__NAME__.commandline' "$zipUrl" "$installDir"
+  Install-ChocolateyZipPackage '__NAME__.tool' "$zipUrl" "$installDir"
 
   ### OR for 7z ###
 
   # if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
   
-  # $tempDir = "$env:TEMP\chocolatey\__NAME__.commandline"
+  # $tempDir = "$env:TEMP\chocolatey\__NAME__.tool"
   # if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 
-  # $file = Join-Path $tempDir "__NAME__.commandline.7z"
-  # Get-ChocolateyWebFile '__NAME__.commandline' "$file" "$zipUrl"
+  # $file = Join-Path $tempDir "__NAME__.tool.7z"
+  # Get-ChocolateyWebFile '__NAME__.tool' "$file" "$zipUrl"
 
   # Start-Process "7za" -ArgumentList "x -o`"$installDir`" -y `"$file`"" -Wait
 
-  Write-ChocolateySuccess '__NAME__.commandline'
+  Write-ChocolateySuccess '__NAME__.tool'
 } catch {
-  Write-ChocolateyFailure '__NAME__.commandline' "$($_.Exception.Message)"
+  Write-ChocolateyFailure '__NAME__.tool' "$($_.Exception.Message)"
   throw 
 }
