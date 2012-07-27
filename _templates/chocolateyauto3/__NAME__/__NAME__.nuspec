@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>https://github.com/__CHOCO_AUTO_PKG_OWNER_REPO__/raw/master/__NAME__/__NAME__.gif</iconUrl>-->
     <dependencies>
-      <dependency id="__NAME__.install" version="[{{PackageVersion}}]" />
+      <dependency id="__NAME__.app" version="[{{PackageVersion}}]" />
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>

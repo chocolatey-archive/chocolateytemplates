@@ -1,4 +1,5 @@
 ﻿try { 
+
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
   ### For BinRoot, use the following instead ###
   #$binRoot = "$env:systemdrive\"
