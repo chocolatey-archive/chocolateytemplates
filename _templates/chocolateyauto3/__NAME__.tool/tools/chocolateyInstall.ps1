@@ -17,7 +17,7 @@ try {
   ### For BinRoot, use the following instead ###
   #$binRoot = "$env:systemdrive\tools"
   ### Using an environment variable to to define the bin root until we implement configuration ###
-  #if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+  #if($env:chocolatey_bin_root -ne $null -and $env:chocolatey_bin_root -notlike '*:\*'){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
   #$installDir = Join-Path $binRoot "$packageName"
   #Write-Host "Adding `'$installDir`' to the path and the current shell path"
   #Install-ChocolateyPath "$installDir"
