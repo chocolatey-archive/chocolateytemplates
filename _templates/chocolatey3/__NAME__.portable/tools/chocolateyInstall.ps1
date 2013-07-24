@@ -1,6 +1,6 @@
 ﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
 
-$packageName = '__NAME__.tool' # arbitrary name for the package, used in messages
+$packageName = '__NAME__.portable' # arbitrary name for the package, used in messages
 $url = 'URL_HERE/.zip/.7z' # download url
 $url64 = $url # 64bit URL here or just use the same as $url
 

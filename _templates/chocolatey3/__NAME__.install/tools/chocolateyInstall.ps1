@@ -1,6 +1,6 @@
 ﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
 
-$packageName = '__NAME__.app' # arbitrary name for the package, used in messages
+$packageName = '__NAME__.install' # arbitrary name for the package, used in messages
 $installerType = 'EXE_OR_MSI' #only one of these two: exe or msi
 $url = 'URL_HERE' # download url
 $url64 = $url # 64bit URL here or just use the same as $url

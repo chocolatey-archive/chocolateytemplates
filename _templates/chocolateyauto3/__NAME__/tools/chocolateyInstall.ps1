@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage '__NAME__.tool' '__NAME__.app'
+﻿#Install-VirtualPackage '__NAME__.portable' '__NAME__.install'

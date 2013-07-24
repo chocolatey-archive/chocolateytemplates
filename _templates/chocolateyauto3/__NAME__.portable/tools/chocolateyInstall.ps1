@@ -8,7 +8,7 @@
 #{{PackageGuid}} - This will be used later | /pg
 #{{DownloadUrlx64}} - The 64bit url for the native file | /u64
 
-$packageName = '__NAME__.tool' # arbitrary name for the package, used in messages
+$packageName = '__NAME__.portable' # arbitrary name for the package, used in messages
 $url = '{{DownloadUrl}}' # download url
 $url64 = '{{DownloadUrlx64}}' # 64bit URL here or just use the same as $url
 

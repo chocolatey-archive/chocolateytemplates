@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>__NAME__.tool</id>
-    <title>__NAME__ (Non-installed Tool)</title>
+    <id>__NAME__.portable</id>
+    <title>__NAME__ (Portable)</title>
     <version>{{PackageVersion}}</version>
     <authors>__REPLACE__</authors>
     <owners>__CHOCO_PKG_OWNER_NAME__</owners>
