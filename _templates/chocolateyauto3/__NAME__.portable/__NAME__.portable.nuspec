@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>__NAME__.app</id>
-    <title>__NAME__ (Application Install)</title>
-    <version>__REPLACE__</version>
+    <id>__NAME__.portable</id>
+    <title>__NAME__ (Portable)</title>
+    <version>{{PackageVersion}}</version>
     <authors>__REPLACE__</authors>
     <owners>__CHOCO_PKG_OWNER_NAME__</owners>
     <summary>__NAME__</summary>
     <description>__NAME__</description>
     <projectUrl>__REPLACE__</projectUrl>
-    <tags>__NAME__ admin</tags>
+    <tags>__NAME__</tags>
     <copyright></copyright>
     <licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://raw.github.com/__CHOCO_PKG_OWNER_REPO__/master/__NAME__/__NAME__.png</iconUrl>-->
+    <!--<iconUrl>https://raw.github.com/__CHOCO_AUTO_PKG_OWNER_REPO__/master/__NAME__/__NAME__.png</iconUrl>-->
     <!--<dependencies>
-      <dependency id="" version="" />
+      <dependency id="7zip.commandline" />
     </dependencies>-->
     <releaseNotes></releaseNotes>
   </metadata>

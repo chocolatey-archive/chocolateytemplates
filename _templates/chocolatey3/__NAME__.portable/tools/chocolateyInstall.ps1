@@ -1,16 +1,8 @@
 ﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
 
-#Items that could be replaced based on what you call chocopkgup.exe with
-#{{PackageName}} - Package Name (should be same as nuspec file and folder) |/p
-#{{PackageVersion}} - The updated version | /v
-#{{DownloadUrl}} - The url for the native file | /u
-#{{PackageFilePath}} - Downloaded file if including it in package | /pp
-#{{PackageGuid}} - This will be used later | /pg
-#{{DownloadUrlx64}} - The 64bit url for the native file | /u64
-
-$packageName = '__NAME__.tool' # arbitrary name for the package, used in messages
-$url = '{{DownloadUrl}}' # download url
-$url64 = '{{DownloadUrlx64}}' # 64bit URL here or just use the same as $url
+$packageName = '__NAME__.portable' # arbitrary name for the package, used in messages
+$url = 'URL_HERE/.zip/.7z' # download url
+$url64 = $url # 64bit URL here or just use the same as $url
 
 try { 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
