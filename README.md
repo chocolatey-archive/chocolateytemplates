@@ -1,10 +1,10 @@
 chocolateytemplates
 ===================
 
-The templates...
+The templates …
   
   
-...it's all about the templates.
+… it’s all about the templates.
 
 ##Welcome to the simple way of creating chocolatey packages
 Take a look at this repository (note the _templates folder).
@@ -23,9 +23,9 @@ Now open a command line, navigate to your source code top level folder and type 
  warmup addTemplateFolder chocolateyauto3 "%cd%\chocolateyauto3"
 ```
   
- * The package owner name (__CHOCO_PKG_OWNER_NAME__) would be you. 
+ * The package maintainer (owner) name (__CHOCO_PKG_OWNER_NAME__) would be you. 
  * Your packages repository (__CHOCO_PKG_OWNER_REPO__) is part of a github repo just **ferventcoder/nugetpackages** if your repository is https://github.com/ferventcoder/nugetpackages. This is only used for image urls.
- * Your chocolatey automatic packages repository (__CHOCO_AUTO_PKG_OWNER_REPO__) could be the same as your regular packages repository. This is also the same as package owner repo. This is only used for image urls.  
+ * Your chocolatey automatic packages repository (__CHOCO_AUTO_PKG_OWNER_REPO__) could be the same as your regular packages repository. This is also the same as package maintainer (owner) repo. This is only used for image urls.  
 
 Now whenever you want to create a new package you just open a command line and navigate to your packages repository source code folder (or install stexbar `cinst stexbar` and just hit Ctrl+M from explorer).  
   
