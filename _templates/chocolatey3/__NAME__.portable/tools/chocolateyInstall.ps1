@@ -2,7 +2,7 @@
 
 $packageName = '__NAME__.portable' # arbitrary name for the package, used in messages
 $url = 'URL_HERE/.zip/.7z' # download url
-$url64 = $url # 64bit URL here or just use the same as $url
+$url64 = 'URL_x64_HERE' # 64bit URL here or remove - if installer decides, then use $url
 
 try { 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
@@ -15,6 +15,7 @@ try {
   #Install-ChocolateyPath "$installDir"
   #$env:Path = "$($env:Path);$installDir"
 
+  # if removing $url64, please remove from here
   Install-ChocolateyZipPackage "$packageName" "$url" "$installDir" "$url64"
 
   ### OR for 7z ###

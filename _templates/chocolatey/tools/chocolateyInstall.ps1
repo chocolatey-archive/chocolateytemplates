@@ -1,21 +1,24 @@
 ﻿#NOTE: Please remove any commented lines to tidy up prior to releasing the package, including this one
 
 $packageName = '__NAME__' # arbitrary name for the package, used in messages
-$installerType = 'EXE_OR_MSI' #only one of these two: exe or msi
+$installerType = 'EXE_MSI_OR_MSU' #only one of these: exe, msi, msu
 $url = 'URL_HERE' # download url
-$url64 = $url # 64bit URL here or just use the same as $url
+$url64 = 'URL_x64_HERE' # 64bit URL here or remove - if installer decides, then use $url
 $silentArgs = 'SILENT_ARGS_HERE' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
 # main helpers - these have error handling tucked into them already
-# installer, will assert administrative rights
+# installer, will assert administrative rights
+# if removing $url64, please remove from here
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
-# download and unpack a zip file
+# download and unpack a zip file
+# if removing $url64, please remove from here
 Install-ChocolateyZipPackage "$packageName" "$url" "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" "$url64"
 
 #try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
   # other helpers - using any of these means you want to uncomment the error handling up top and at bottom.
-  # downloader that the main helpers use to download items
+  # downloader that the main helpers use to download items
+  # if removing $url64, please remove from here
   #Get-ChocolateyWebFile "$packageName" 'DOWNLOAD_TO_FILE_FULL_PATH' "$url" "$url64"
   # installer, will assert administrative rights - used by Install-ChocolateyPackage
   #Install-ChocolateyInstallPackage "$packageName" "$installerType" "$silentArgs" '_FULLFILEPATH_' -validExitCodes $validExitCodes
@@ -28,17 +31,17 @@ Install-ChocolateyZipPackage "$packageName" "$url" "$(Split-Path -parent $MyInvo
   # add specific files as shortcuts to the desktop
   #$target = Join-Path $MyInvocation.MyCommand.Definition "$($packageName).exe"
   #Install-ChocolateyDesktopLink $target
-  
+
   #------- ADDITIONAL SETUP -------#
   # make sure to uncomment the error handling if you have additional setup to do
 
   #$processor = Get-WmiObject Win32_Processor
   #$is64bit = $processor.AddressWidth -eq 64
 
-  
+
   # the following is all part of error handling
   #Write-ChocolateySuccess "$packageName"
 #} catch {
   #Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-  #throw 
+  #throw
 #}
