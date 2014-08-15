@@ -3,12 +3,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>__NAME__</id>
-    <title>__NAME__</title>
+    <title>__REPLACE__</title>
     <version>{{PackageVersion}}</version>
     <authors>__REPLACE__</authors>
     <owners>__CHOCO_PKG_MAINTAINER_NAME__</owners>
-    <summary>__NAME__</summary>
-    <description>__NAME__</description>
+    <summary>__REPLACE__</summary>
+    <description>__REPLACE__</description>
     <projectUrl>__REPLACE__</projectUrl>
     <tags>__NAME__ admin</tags>
     <copyright></copyright>
