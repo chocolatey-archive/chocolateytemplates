@@ -14,19 +14,8 @@ try {
   #$env:Path = "$($env:Path);$installDir"
 
   # if removing $url64, please remove from here
+  # despite the name "Install-ChocolateyZipPackage" this also works with 7z archives
   Install-ChocolateyZipPackage "$packageName" "$url" "$installDir" "$url64"
-
-  ### OR for 7z ###
-
-  # if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
-
-  # $tempDir = "$env:TEMP\chocolatey\$($packageName)"
-  # if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-
-  # $file = Join-Path $tempDir "$($packageName).7z"
-  # Get-ChocolateyWebFile "$packageName" "$file" "$url"
-
-  # Start-Process "7za" -ArgumentList "x -o`"$installDir`" -y `"$file`"" -Wait
 
   Write-ChocolateySuccess "$packageName"
 } catch {
