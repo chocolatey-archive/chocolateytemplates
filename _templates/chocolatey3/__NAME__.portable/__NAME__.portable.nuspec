@@ -17,7 +17,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>http://cdn.rawgit.com/__CHOCO_PKG_MAINTAINER_REPO__/master/icons/__NAME__.png</iconUrl>-->
     <!--<dependencies>
-      <dependency id="7zip.commandline" />
+      <dependency id="" />
     </dependencies>-->
     <releaseNotes></releaseNotes>
   </metadata>

@@ -43,8 +43,8 @@ Install-ChocolateyZipPackage "$packageName" "$url" "$(Split-Path -parent $MyInvo
   #------- ADDITIONAL SETUP -------#
   # make sure to uncomment the error handling if you have additional setup to do
 
-  #$processor = Get-WmiObject Win32_Processor
-  #$is64bit = $processor.AddressWidth -eq 64
+  # outputs the bitness of the OS (either "32" or "64")
+  #$osBitness = Get-ProcessorBits
 
 
   # the following is all part of error handling
