@@ -22,6 +22,8 @@ Now open a command line, navigate to your source code top level folder and type 
  warmup addTemplateFolder chocolateyauto3 "%cd%\chocolateyauto3"
 ```
 
+(Use `$pwd` instead of `%cd%` for use in PowerShell, e.g. `warmup addTemplateFolder chocolatey "$pwd\chocolatey"`)
+
  * The package maintainer name (old term: owner) (__CHOCO_PKG_MAINTAINER_NAME__) would be you.
  * Your packages repository (__CHOCO_PKG_MAINTAINER_REPO__) is part of a github repo just **ferventcoder/chocolatey-packages** if your repository is https://github.com/ferventcoder/chocolatey-packages. This is only used for image urls. This repository contains your packages, also automatic packages if you have them. It is not recommended to use separate repositories for manual and automatic packages.
 
