@@ -39,3 +39,7 @@ as in
  warmup chocolatey3 notepadplusplus
 ```
 
+**Note** that Warmup has problems with UTF-8 encoded files (see [the related issue at its GitHub repository](https://github.com/chucknorris/warmup/issues/21)). Therefore, the UTF-8 test in the *.nuspec files `<!-- Do not remove this test for UTF-8: if “Ω”…` might actually fail, i.e. you see `???` in your editor.
+
+It is recommended to use `choco new` for initial package creation, see [Chocolatey's wiki entry on package creation](https://github.com/chocolatey/choco/wiki/CreatePackages).
+
